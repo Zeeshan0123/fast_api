@@ -1,0 +1,15 @@
+fastapi
+jinja2
+fastapi[all]
+pydantic
+pymongo[srv]
+python-dotenv
+pytest
+
+mongodb+srv://zeeshanshaan391:5B1jJj0TFfdluKZo@cluster0.dcc0rmy.mongodb.net/
+
+
+sudo lsof -t -i tcp:8000 | xargs kill -9
+
+
+https://www.youtube.com/watch?v=VFu95RjLSQ8               //best channel for fastapi
