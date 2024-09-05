@@ -49,7 +49,8 @@ By default, the API will run on http://127.0.0.1:8000.
 ## API Endpoints
 ### 1. /generate_story/ (POST)
 Generates a story and accompanying illustrations based on user inputs.
-```bash
+### Request Body:
+```json
 {
   "mood": "Happy",
   "story_type": "Adventure",
@@ -59,6 +60,43 @@ Generates a story and accompanying illustrations based on user inputs.
   "txt": "A young boy and his magical pet dragon go on an adventure."
 }
 ```
+### Response:
+```json
+{
+  "story": "Once upon a time, in a mystical forest...",
+  "images": [
+    "https://flux-ai-image-url-1",
+    "https://flux-ai-image-url-2",
+    "https://flux-ai-image-url-3"
+  ]
+}
+```
+
+## How the Story Generation Works
+1. **User Input:** The user inputs mood, story type, theme, number of scenes, and specific story details.
+2. **LLaMA Model:** The inputs are passed to the LLaMA 3.1 model, which generates the story across 7 pages, each with a short paragraph.
+3. **FLUX AI:** For each scene, the story description is sent to FLUX AI, which returns an image illustrating the scene.
+4. **Response:** The API responds with the full story text and the corresponding image URLs.
+
+## Future Improvements
+- **More Customization:** Add more options for customizing story styles and themes.
+- **Expanded Language Support:** Provide stories in multiple languages.
+- **Better Age Customization:** Adjust language complexity more finely based on the reader's age.
+
+### Credits
+- **LangChain**: Used for prompt engineering and managing interactions with the LLaMA model.
+- **FLUX AI**: Responsible for generating illustrations.
+- **FastAPI**: The backend framework powering the API.
+- **LLaMA**: The language model used for generating engaging stories.
+- **Hugging Face**: The platform where the pre-trained, fine-tuned model was fetched.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+```vbnet
+This README explains the setup, usage, and technologies behind your project. Let me know if you need to add anything specific or further customization!
+```
+
+
 
 
 
