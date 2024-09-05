@@ -11,7 +11,7 @@ import fal_client
 app = FastAPI()
 
 # Set the environment variable
-os.environ['FAL_KEY'] = 'bb79b746-999d-4bec-af22-04fddb05d087:49350e8b76fd8dda0fb9dd8442a9ccf5'
+os.environ['FAL_KEY'] = ''
 
 # Request body model
 class StoryRequest(BaseModel):
