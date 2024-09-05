@@ -72,12 +72,6 @@ Generates a story and accompanying illustrations based on user inputs.
 }
 ```
 
-## How the Story Generation Works
-1. **User Input:** The user inputs mood, story type, theme, number of scenes, and specific story details.
-2. **LLaMA Model:** The inputs are passed to the LLaMA 3.1 model, which generates the story across 7 pages, each with a short paragraph.
-3. **FLUX AI:** For each scene, the story description is sent to FLUX AI, which returns an image illustrating the scene.
-4. **Response:** The API responds with the full story text and the corresponding image URLs.
-
 ## Future Improvements
 - **More Customization:** Add more options for customizing story styles and themes.
 - **Expanded Language Support:** Provide stories in multiple languages.
