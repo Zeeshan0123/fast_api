@@ -1,4 +1,4 @@
- # **Story Generation API with FastAPI and LLaMA**
+ **Story Generation API with FastAPI and LLaMA**
  
 This repository contains an API for generating personalized short stories based on user inputs such as mood, story type, theme, length, and more. The API leverages a LLaMA language model to create engaging, imaginative stories for kids, along with illustrations using FLUX AI.
 
