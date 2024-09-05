@@ -49,7 +49,7 @@ By default, the API will run on http://127.0.0.1:8000.
 ## API Endpoints
 ### 1. /generate_story/ (POST)
 Generates a story and accompanying illustrations based on user inputs.
-```json
+```bash
 {
   "mood": "Happy",
   "story_type": "Adventure",
