@@ -29,6 +29,43 @@ Follow the steps below to set up and run the project:
  ```bash
 git clone https://github.com/yourusername/story-generation-api.git
 cd story-generation-api
+```
+### 2. Install Dependencies
+ ```bash
+pip install -r requirements.txt
+```
+### 3. Set Environment Variables
+Ensure you have your FAL_KEY ready to use the FLUX AI API.
+ ```bash
+export FAL_KEY='your_fal_key'
+```
+### 4. Run the API
+Run the FastAPI server locally:
+ ```bash
+uvicorn main:app --reload
+```
+By default, the API will run on http://127.0.0.1:8000.
 
-### 1. Clone the Repositor
+## API Endpoints
+### 1. /generate_story/ (POST)
+Generates a story and accompanying illustrations based on user inputs.
+```json
+{
+  "mood": "Happy",
+  "story_type": "Adventure",
+  "theme": "Friendship",
+  "length": 500,
+  "num_scenes": 3,
+  "txt": "A young boy and his magical pet dragon go on an adventure."
+}
+```
+
+
+
+
+
+
+
+
+
 
