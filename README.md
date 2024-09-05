@@ -30,4 +30,5 @@ Follow the steps below to set up and run the project:
 git clone https://github.com/yourusername/story-generation-api.git
 cd story-generation-api
 
+### 1. Clone the Repositor
 
