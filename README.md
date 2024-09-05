@@ -39,7 +39,9 @@ Ensure you have your FAL_KEY ready to use the FLUX AI API.
  ```bash
 export FAL_KEY='your_fal_key'
 ```
-### 4. Run the API
+### 4. Download the models file from Hugging Face
+
+### 5. Run the API
 Run the FastAPI server locally:
  ```bash
 uvicorn main:app --reload
