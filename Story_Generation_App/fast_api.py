@@ -18,7 +18,6 @@ class StoryRequest(BaseModel):
     mood: str
     story_type: str
     theme: str
-    length: int
     num_scenes: int
     txt: str
 
